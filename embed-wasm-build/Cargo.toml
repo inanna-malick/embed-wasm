@@ -1,6 +1,6 @@
 [package]
 name = "embed-wasm-build"
-version = "0.1.0-alpha"
+version = "0.1.0"
 authors = ["inanna malick <inanna@recursion.wtf>"]
 edition = "2018"
 description = "embed rust wasm build ouput in native binaries"
