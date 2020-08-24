@@ -14,7 +14,6 @@ use std::io::{BufWriter, Write};
 use std::path::{Path, PathBuf};
 use structopt::StructOpt;
 
-
 /// Compile the cargo executable in the 'wasm' subdir using cargo-web and
 /// generate a static hashmap using 'phf' containing all static files
 /// output by the cargo-web build process
@@ -88,7 +87,6 @@ pub fn compile_wasm<X: AsRef<Path>>(cargo_web_dir: X) {
         .unwrap();
     }
 
-
     let mut codegen = phf_codegen::Map::new();
 
     let dest_path = dest_path.to_str().unwrap();
@@ -101,7 +99,8 @@ pub fn compile_wasm<X: AsRef<Path>>(cargo_web_dir: X) {
         &mut file,
         "static WASM: ::phf::Map<&'static str, &'static [u8]> =\n{};\n",
         codegen.build()
-    ).unwrap();
+    )
+    .unwrap();
 
     // register rerun-if-changed hooks for all wasm directory entries not in gitignore
     for result in Walk::new("wasm") {

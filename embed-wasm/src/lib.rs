@@ -9,7 +9,6 @@
 use headers::HeaderMapExt;
 use hyper::{Body, Response};
 
-
 /// Enum controlling how requests with path '/' are handled
 #[non_exhaustive]
 #[derive(PartialEq, Eq)]
@@ -19,7 +18,6 @@ pub enum IndexHandling {
     /// apply no special logic to requests to '/'
     NoIndexHandling,
 }
-
 
 /// Wraps a hashmap of static content generated at compile time and provides convenience
 /// functions for resolving static content given a path.
@@ -75,10 +73,9 @@ macro_rules! include_wasm {
         include!(concat!(env!("OUT_DIR"), "/wasm_blobs.rs"));
 
         // FIXME: will fail if user aliases embed_wasm
-        pub static STATIC_LOOKUP: ::embed_wasm::StaticLookup  =
-            ::embed_wasm::StaticLookup{
-                index_mode: ::embed_wasm::IndexHandling::MapEmptyPathToIndex,
-                wasm: &WASM,
+        pub static STATIC_LOOKUP: ::embed_wasm::StaticLookup = ::embed_wasm::StaticLookup {
+            index_mode: ::embed_wasm::IndexHandling::MapEmptyPathToIndex,
+            wasm: &WASM,
         };
     };
 }
