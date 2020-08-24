@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["compile_wasm","Compile the cargo executable in the 'wasm' subdir using cargo-web and generate a static hashmap using 'phf' containing all static files output by the cargo-web build process"]]});
