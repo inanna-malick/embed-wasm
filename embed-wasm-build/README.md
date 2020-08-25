@@ -2,7 +2,7 @@
 
 # embed-wasm-build
 
-Current version: 0.1.0-alpha
+Current version: 0.1.0
 
 This crate provides compile-time utilities for packaging 'cargo-web' build output
 (rust compiled as wasm and associated html/css/etc files) inside native binaries
