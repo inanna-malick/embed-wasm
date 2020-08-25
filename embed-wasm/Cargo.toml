@@ -1,11 +1,14 @@
 [package]
 name = "embed-wasm"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["inanna malick <inanna@recursion.wtf>"]
 edition = "2018"
-description = "serve embed cargo-web wasm build ouput from native binaries"
+description = "serve embedded cargo-web wasm build ouput from native binaries"
 license = "MIT"
-keywords = ["web", "webasm"]
+keywords = ["web-programming", "wasm"]
+documentation = "https://inanna-malick.github.io/embed-wasm/embed_wasm/"
+repository = "https://github.com/inanna-malick/embed-wasm"
+readme = "README.md"
 
 [dependencies]
 phf = "0.8.0"

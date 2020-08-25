@@ -2,7 +2,7 @@
 
 # embed-wasm
 
-Current version: 0.1.0
+Current version: 0.1.1
 
 This crate provides utilities for serving 'cargo-web' build output
 (rust compiled as wasm and associated html/css/etc files) included in

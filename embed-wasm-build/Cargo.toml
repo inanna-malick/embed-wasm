@@ -1,11 +1,14 @@
 [package]
 name = "embed-wasm-build"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["inanna malick <inanna@recursion.wtf>"]
 edition = "2018"
 description = "embed rust wasm build ouput in native binaries"
 license = "MIT"
-keywords = ["web", "webasm", "build"]
+keywords = ["web-programming", "wasm", "development-tools::build-utils"]
+documentation = "https://inanna-malick.github.io/embed-wasm/embed_wasm_build/"
+repository = "https://github.com/inanna-malick/embed-wasm"
+readme = "README.md"
 
 [dependencies]
 ignore = "0.4.14"
